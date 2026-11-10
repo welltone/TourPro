@@ -13,7 +13,7 @@ y = df[target]
 Xtrain, Xtest, ytrain, ytest = train_test_split(
     X, y, test_size=0.2, random_state=42, stratify=y
 )
-# To prevent FileNotFoundError, I stored the files into tourism_project folder.
+
 Xtrain.to_csv("Xtrain.csv", index=False)
 Xtest.to_csv("Xtest.csv", index=False)
 ytrain.to_csv("ytrain.csv", index=False)
