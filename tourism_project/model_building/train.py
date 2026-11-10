@@ -1,5 +1,7 @@
+
 # for data manipulation
 import pandas as pd
+
 # for building the preprocessing and modeling pipeline
 from sklearn.compose import make_column_transformer
 from sklearn.pipeline import make_pipeline
@@ -7,6 +9,7 @@ import xgboost as xgb
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import classification_report
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
+
 # for model serialization and experiment tracking
 import joblib
 import mlflow
